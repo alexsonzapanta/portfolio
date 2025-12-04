@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #4ea8ff;
+}
+
+/* Sections */
+section {
+  padding: 100px 50px;
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.hero span {
+  color: #4ea8ff;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: #4ea8ff;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button-outline {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 2px solid #4ea8ff;
+  color: #4ea8ff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button-outline:hover {
+  background: #4ea8ff;
+  color: black;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-list span {
+  padding: 10px 20px;
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Animations */
+.animate-fade {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards;
+}
+
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
