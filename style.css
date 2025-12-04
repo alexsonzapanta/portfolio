@@ -43,19 +43,23 @@ body {
   color: #4ea8ff;
 }
 
-/* Sections */
-section {
-  padding: 100px 50px;
-  min-height: 100vh;
-}
-
 /* Hero */
 .hero {
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   height: 100vh;
+  background: url('https://images.unsplash.com/photo-1537432376769-00f6e7b2d6d3?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-overlay {
+  text-align: center;
+  backdrop-filter: blur(5px);
+  background: rgba(0,0,0,0.4);
+  padding: 50px;
+  border-radius: 10px;
 }
 
 .hero span {
@@ -89,6 +93,12 @@ section {
   color: black;
 }
 
+/* Sections */
+section {
+  padding: 100px 50px;
+  min-height: 100vh;
+}
+
 /* Skills */
 .skills-list {
   display: flex;
@@ -114,11 +124,13 @@ section {
   background: #111;
   padding: 25px;
   border-radius: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform-style: preserve-3d;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: rotateY(5deg) rotateX(5deg) translateY(-5px);
+  box-shadow: 0 20px 30px rgba(78, 168, 255, 0.4);
 }
 
 /* Animations */
@@ -142,4 +154,9 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Links */
+a {
+  text-decoration: none;
 }
