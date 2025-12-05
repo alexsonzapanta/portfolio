@@ -48,3 +48,14 @@ themeToggle.addEventListener('click', () => {
     themeToggle.textContent = '☀️';
   }
 });
+
+// Toggle blog read more
+const toggleButtons = document.querySelectorAll('.toggle-blog');
+
+toggleButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.parentElement;
+    card.classList.toggle('active');
+    btn.textContent = card.classList.contains('active') ? 'Show Less' : 'Read More';
+  });
+});

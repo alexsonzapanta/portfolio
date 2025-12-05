@@ -17,6 +17,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button id="theme-toggle" class="button-outline">🌙</button>
@@ -26,16 +27,14 @@
   <section id="hero" class="hero animate-fade">
     <div class="hero-overlay">
       <h2>Hello, I'm <span>Alexson Zapanta</span></h2>
-      <p>Frontend Developer • UI/UX Designer • Problem Solver</p>
+      <p>Frontend Developer • UI/UX Designer • Cybersecurity Enthusiast</p>
       <a href="#projects" class="button">View My Projects</a>
     </div>
 
-    <!-- Floating profile bubble -->
     <div class="hero-bubble">
       <img src="profile.jpg" alt="Alexson Zapanta" class="profile-pic-bubble">
     </div>
 
-    <!-- Optional smaller floating bubbles -->
     <div class="small-bubble bubble1"></div>
     <div class="small-bubble bubble2"></div>
     <div class="small-bubble bubble3"></div>
@@ -45,9 +44,9 @@
   <section id="about" class="about animate-fade">
     <h2>About Me</h2>
     <p>
-      I am a passionate developer who loves creating beautiful and interactive web experiences.
-      I specialize in HTML, CSS, JavaScript, React, and modern UI design. I enjoy learning new technologies
-      and building projects that solve real-world problems.
+      I am a passionate developer and cybersecurity enthusiast who loves creating interactive web experiences.
+      I specialize in HTML, CSS, JavaScript, React, and modern UI/UX design. I enjoy learning new technologies
+      and solving real-world problems.
     </p>
   </section>
 
@@ -62,6 +61,7 @@
       <span>Node.js</span>
       <span>UI/UX Design</span>
       <span>Git & GitHub</span>
+      <span>Cybersecurity</span>
     </div>
   </section>
 
@@ -69,7 +69,6 @@
   <section id="projects" class="projects animate-fade">
     <h2>Projects</h2>
     <div class="project-grid">
-
       <div class="project-card">
         <h3>Portfolio Website</h3>
         <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase projects and skills.</p>
@@ -89,6 +88,71 @@
         <p>A weather application that fetches live weather data from an API and displays it dynamically.</p>
         <a href="demos/weather/index.html" class="button-outline" target="_blank">Live Demo</a>
         <a href="https://github.com/alexsonzapanta/weather" class="button-outline" target="_blank">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog animate-fade">
+    <h2>Cybersecurity Blog</h2>
+    <p class="blog-subtitle">TryHackMe writeups, cybersecurity tips, and tutorials</p>
+
+    <div class="blog-grid">
+
+      <!-- Blog Card 1 -->
+      <div class="blog-card animate-fade">
+        <h3>What is Cybersecurity?</h3>
+        <p>A beginner-friendly guide to understanding cybersecurity, attack types, and best practices.</p>
+        <button class="button-outline toggle-blog">Read More</button>
+        <div class="blog-content">
+          <p>Cybersecurity is the practice of protecting systems, networks, and data from digital attacks.</p>
+          <ul>
+            <li>Phishing attacks</li>
+            <li>Malware</li>
+            <li>SQL Injection</li>
+            <li>DDoS attacks</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="blog-card animate-fade">
+        <h3>TryHackMe: Intro to Cyber Security</h3>
+        <p>Step-by-step notes, flags, and everything learned from this THM room.</p>
+        <button class="button-outline toggle-blog">Read More</button>
+        <div class="blog-content">
+          <h4>Enumeration</h4>
+          <ul>
+            <li>Learned AES/RSA encryption basics</li>
+            <li>Basic Linux & Windows security</li>
+            <li>Importance of secure passwords</li>
+          </ul>
+          <h4>Password Hash Task</h4>
+          <pre>hashcat -m 0 hash.txt rockyou.txt</pre>
+          <p>Result: Flag Found ✔</p>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="blog-card animate-fade">
+        <h3>TryHackMe: Easy Peasy — Rooted!</h3>
+        <p>Enumeration → Exploitation → PrivEsc. Full explanation of how I completed this THM room.</p>
+        <button class="button-outline toggle-blog">Read More</button>
+        <div class="blog-content">
+          <h4>Enumeration</h4>
+          <ul>
+            <li>Nmap scan: Ports 22 (SSH), 80 (HTTP)</li>
+            <li>Web login page vulnerable to SQLi</li>
+          </ul>
+          <h4>Exploitation</h4>
+          <p>Used SQL Injection to bypass login. Rooted via misconfigured SUID binary.</p>
+          <h4>Lessons Learned</h4>
+          <ul>
+            <li>Always enumerate carefully</li>
+            <li>Web vulnerabilities are common entry points</li>
+            <li>Privilege escalation can be simple if misconfigurations exist</li>
+          </ul>
+        </div>
       </div>
 
     </div>

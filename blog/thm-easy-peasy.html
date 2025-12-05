@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>THM Easy Peasy Walkthrough</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<section class="blog-article">
+<h1>TryHackMe: Easy Peasy — Full Walkthrough</h1>
+<p>Enumeration → Exploitation → Privilege Escalation. Here’s how I solved it:</p>
+
+<h2>1️⃣ Enumeration</h2>
+<ul>
+  <li>Nmap scan revealed open ports: 22 (SSH), 80 (HTTP)</li>
+  <li>Visited web page: found login form</li>
+</ul>
+
+<h2>2️⃣ Exploitation</h2>
+<p>Used SQL Injection on login page to bypass authentication.</p>
+
+<h2>3️⃣ Privilege Escalation</h2>
+<p>Found a misconfigured SUID binary, ran it to get root access.</p>
+
+<h2>4️⃣ Lessons Learned</h2>
+<ul>
+  <li>Always enumerate thoroughly</li>
+  <li>Web vulnerabilities are common entry points</li>
+  <li>Privilege Escalation can be simple with SUID misconfigurations</li>
+</ul>
+
+<a href="../index.html" class="button-outline">⬅ Back to Home</a>
+</section>
+</body>
+</html>

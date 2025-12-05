@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>THM Intro to Cyber Security</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<section class="blog-article">
+<h1>TryHackMe: Intro to Cyber Security — Full Walkthrough</h1>
+<p>This room introduces core cybersecurity concepts like encryption, passwords, networking, OSINT, and basic attacks.</p>
+
+<h2>🕵️ Enumeration</h2>
+<p>I started by reading through each module. Key takeaways:</p>
+<ul>
+  <li>Understanding encryption (AES, RSA)</li>
+  <li>Basic Linux & Windows security concepts</li>
+  <li>Importance of secure passwords</li>
+</ul>
+
+<h2>🔐 Task: Cracking a Password Hash</h2>
+<p>I used <code>hashcat</code> with a wordlist:</p>
+<pre>
+hashcat -m 0 hash.txt rockyou.txt
+</pre>
+<p>Result: <strong>Flag Found ✔</strong></p>
+
+<h2>🌐 Networking Basics</h2>
+<p>I learned how data travels through layers using OSI and TCP/IP models.</p>
+
+<h2>📌 Summary</h2>
+<p>This room builds a good foundation for future security learning.</p>
+
+<a href="../index.html" class="button-outline">⬅ Back to Home</a>
+</section>
+</body>
+</html>

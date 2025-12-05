@@ -223,3 +223,47 @@ section {
 body, .navbar, .project-card, .skills-list span, .button, .button-outline, .hero-bubble, .small-bubble {
   transition: all 0.5s ease;
 }
+
+/* Blog Section */
+.blog-subtitle {
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: var(--section-bg);
+  border-radius: 20px;
+  padding: 20px;
+  cursor: default;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.4), -6px -6px 12px rgba(255,255,255,0.05);
+}
+
+.blog-card h3 {
+  margin-top: 0;
+}
+
+.blog-card p {
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.blog-card .blog-content {
+  display: none;
+  margin-top: 15px;
+  opacity: 0.95;
+}
+
+.blog-card.active .blog-content {
+  display: block;
+}
