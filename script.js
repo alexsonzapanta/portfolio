@@ -49,7 +49,7 @@ themeToggle.addEventListener('click', () => {
   }
 });
 
-// Toggle blog read more
+// Toggle blog read more with smooth slide
 const toggleButtons = document.querySelectorAll('.toggle-blog');
 
 toggleButtons.forEach(btn => {

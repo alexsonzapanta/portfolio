@@ -223,7 +223,6 @@ section {
 body, .navbar, .project-card, .skills-list span, .button, .button-outline, .hero-bubble, .small-bubble {
   transition: all 0.5s ease;
 }
-
 /* Blog Section */
 .blog-subtitle {
   margin-bottom: 30px;
@@ -241,6 +240,7 @@ body, .navbar, .project-card, .skills-list span, .button, .button-outline, .hero
   border-radius: 20px;
   padding: 20px;
   cursor: default;
+  overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -259,11 +259,13 @@ body, .navbar, .project-card, .skills-list span, .button, .button-outline, .hero
 }
 
 .blog-card .blog-content {
-  display: none;
-  margin-top: 15px;
-  opacity: 0.95;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
 }
 
 .blog-card.active .blog-content {
-  display: block;
+  max-height: 1000px; /* Enough to show content */
+  opacity: 1;
 }
