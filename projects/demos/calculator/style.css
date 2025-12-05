@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: radial-gradient(circle at top, #0a0f1d, #000);
+  color: #fff;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #4ea8ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.calculator {
+  width: 340px;
+  margin: 130px auto;
+  padding: 25px;
+  border-radius: 20px;
+
+  /* GLASS */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+
+  /* SHADOW */
+  box-shadow: 0 0 20px rgba(78,168,255,0.3);
+}
+
+.display {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: right;
+  font-size: 2rem;
+  margin-bottom: 25px;
+
+  box-shadow: inset 4px 4px 10px rgba(0,0,0,0.4),
+              inset -4px -4px 10px rgba(255,255,255,0.05);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  padding: 18px 0;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff;
+
+  /* Neumorphism */
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.4),
+              -4px -4px 8px rgba(255,255,255,0.05);
+  transition: 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: inset 4px 4px 10px rgba(0,0,0,0.4),
+              inset -4px -4px 10px rgba(255,255,255,0.05);
+}
+
+.operator {
+  color: #4ea8ff;
+}
+
+.equals {
+  background: #4ea8ff;
+  color: #000;
+}
+
+.zero {
+  grid-column: span 2;
+}

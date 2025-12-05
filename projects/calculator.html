@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator App – Preview</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .project-container {
+      max-width: 900px;
+      margin: 120px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(78,168,255,0.25);
+      animation: fadeUp 0.8s ease;
+    }
+
+    @keyframes fadeUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    img {
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 12px;
+      transition: 0.4s;
+    }
+    img:hover {
+      transform: scale(1.02);
+    }
+
+    .breadcrumb a {
+      color: #4ea8ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-container">
+    <p class="breadcrumb"><a href="../index.html#projects">← Back to Projects</a></p>
+
+    <h1>Calculator App</h1>
+    <p>A clean, simple, and functional calculator app made with JavaScript.</p>
+
+    <img src="https://images.unsplash.com/photo-1618005198919-2fef14f2c89d?q=80&w=2000" alt="Calculator Screenshot">
+
+    <h2>Features</h2>
+    <ul>
+      <li>Basic math operations</li>
+      <li>Responsive UI</li>
+      <li>Keypress support</li>
+      <li>DOM event handling practice</li>
+    </ul>
+
+    <h2>Tech Used</h2>
+    <ul>
+      <li>HTML, CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <a href="../demos/calculator/" class="button-outline" target="_blank">Live Demo</a>
+    <a href="#" class="button-outline" target="_blank">View Code</a>
+  </div>
+
+</body>
+</html>
